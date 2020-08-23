@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/069ae13985.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherApp">
+        <h1 id="current-city">
+          Budapest - Hungary
+        </h1>
+        <div class="row">
+          <div class="col">
+            <span style="font-size: 80px; color: #ffcd3c;">
+              <i class="fas fa-sun"></i>
+            </span>
+          </div>
+          <div class="col-6" id="main-temp">
+            <span class="temperature" id="temperature">19</span>
+            <span class="units">
+              <a href="#" id="celsius-link"> ºC</a> |
+              <a href="#" id="fahrenheit-link"> ºF</a>
+            </span>
+          </div>
+          <div class="col">
+            <span style="font-size: 70px;">Hot!</span>
+          </div>
+        </div>
+        <div class="middleText" id="date-time">
+          <div class="row justify-content-center">
+            <div class="col-8,text-align:right" id="current-date">Sunday</div>
+            <div class="col-4" id="current-time">20:46</div>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li class="forecastDay">Monday</li>
+                <li class="forecastEmoji">
+                  <span style="font-size: 35px; color: #ffcd3c;"
+                    ><i class="fas fa-cloud-sun"></i
+                  ></span>
+                </li>
+                <li class="forecastTemp">22ºC|ºF</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="forecastDay">Tuesday</li>
+                <li class="forecastEmoji">
+                  <span style="font-size: 35px; color: #ffcd3c;"
+                    ><i class="fas fa-cloud-sun"></i
+                  ></span>
+                </li>
+                <li class="forecastTemp">20ºC |ºF</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="forecastDay">Wednesday</li>
+                <li class="forecastEmoji">
+                  <span style="font-size: 35px; color: #ffcd3c;"
+                    ><i class="fas fa-cloud-sun"></i
+                  ></span>
+                </li>
+                <li class="forecastTemp">21ºC|ºF</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="forecastDay">Thursday</li>
+                <li class="forecastEmoji">
+                  <span style="font-size: 35px; color: #00bcd4;"
+                    ><i class="fas fa-umbrella"></i
+                  ></span>
+                </li>
+                <li class="forecastTemp">22ºC|ºF</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="forecastDay">Friday</li>
+                <li class="forecastEmoji">
+                  <span style="font-size: 35px; color: #00bcd4;"
+                    ><i class="fas fa-cloud-rain"></i
+                  ></span>
+                </li>
+                <li class="forecastTemp">15ºC|ºF</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <p class="verbiage" id="verbiage">
+          I want to know the temp in?
+        </p>
+        <form class="search-city" id="search-city-form">
+          <div class="row">
+            <div class="col-6 justify-content-center">
+              <input
+                type="search"
+                placeholder="Enter City..."
+                autofocus="on"
+                autocomplete="off"
+                id="search-city"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3 justify-content-center">
+              <input
+                type="submit"
+                value="search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  font-family: "Caveat";
+}
+.container {
+  height: 700px;
+  width: 800px;
+  margin: 20px auto;
+}
+.weatherApp {
+  box-shadow: #dadde1 10px 10px;
+  padding: 10px 20px;
+  margin: 100px auto;
+  max-width: 700px;
+  border-radius: 6px;
+  border: 1px solid #dadde1;
+}
+.forecast {
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+h1 {
+  display: block;
+  margin: 0 auto;
+  color: #00bcd4;
+  font-size: 90px;
+  text-align: center;
+  padding: 20px;
+}
+ul {
+  display: block;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.forecastTemp {
+  font-size: 20px;
+}
+.forecastDay {
+  font-weight: bolder;
+}
+.col-6 {
+  font-size: 60px;
+}
+.middleText {
+  font-size: 50px;
+  text-align: center;
+}
+.verbiage {
+  text-align: center;
+  font-size: 30px;
+  color: #00bcd4;
+}
