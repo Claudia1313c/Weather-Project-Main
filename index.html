@@ -18,29 +18,49 @@
       src="https://kit.fontawesome.com/069ae13985.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weatherApp">
         <h1 id="current-city">Budapest - Hungary</h1>
-        <div class="row">
-          <div class="col">
-            <span style="font-size: 80px; color: #ffcd3c">
-              <i class="fas fa-sun"></i>
-            </span>
-          </div>
-          <div class="col-6" id="main-temp">
-            <span class="temperature" id="temperature">19</span>
-            <span class="units">
-              <a href="#" id="celsius-link"> ºC</a> |
-              <a href="#" id="fahrenheit-link"> ºF</a>
-            </span>
-          </div>
-          <div class="col">
-            <span style="font-size: 70px">Hot!</span>
+        <div class="currentTemp" id="current-temp">
+          <div class="row justify-content-center">
+            <div class="col">
+              <ul>
+                <li class="emoji" id="current-city-emoji">
+                  <span style="font-size: 80px; color: #ffcd3c">
+                    <i class="fas fa-sun"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="mainTemp" id="main-temp">
+                  <span class="temperature" id="temperature">19</span>
+                  <span class="units" id="units">
+                    <a href="#" class="change-temp-btn" id="celsius-link"> ºC</a
+                    >|
+                    <a href="#" class="change-temp-btn" id="fahrenheit-link">
+                      ºF</a
+                    >
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="weatherDescription" id="weather-description">
+                  <span class="weather-description">Hot!</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <div class="middleText" id="date-time">
           <div class="row justify-content-center">
             <div class="col-8,text-align:right" id="current-date">Sunday</div>
@@ -114,10 +134,10 @@
             <div class="col-6 justify-content-center">
               <input
                 type="search"
-                placeholder="Enter City..."
+                placeholder="Search City..."
                 autofocus="on"
                 autocomplete="off"
-                id="search-city"
+                id="search-city-input"
                 class="form-control shadow-sm"
               />
             </div>
@@ -125,7 +145,8 @@
               <input
                 type="submit"
                 value="search"
-                class="form-control btn btn-primary shadow-sm"
+                class="form-control btn btn-primary"
+                id="search-city-primary"
               />
             </div>
             <div class="col-3">
@@ -133,7 +154,9 @@
                 type="button"
                 class="btn btn-success w-100 h-100"
                 id="current-location-button"
-              >current</button>
+              >
+                current
+              </button>
             </div>
           </div>
         </form>

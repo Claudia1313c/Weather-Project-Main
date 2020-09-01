@@ -53,3 +53,20 @@ ul {
   font-size: 30px;
   color: #00bcd4;
 }
+.weatherDescription {
+  font-size: 30px;
+  text-align: justify;
+  width: 62px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.units {
+  font-size: 15px;
+  position: relative;
+  top: -24px;
+  left: -10px;
+}
+.mainTemp {
+  font-size: 65px;
+}
