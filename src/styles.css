@@ -54,11 +54,11 @@ ul {
   color: #00bcd4;
 }
 .weatherDescription {
-  font-size: 30px;
+  font-size: 50px;
   text-align: justify;
   width: 62px;
   display: block;
-  margin: 0 auto;
+  margin-left: -80px;
   position: relative;
 }
 .units {
@@ -69,4 +69,8 @@ ul {
 }
 .mainTemp {
   font-size: 65px;
+}
+.emoji {
+  font-size: 80px;
+  margin-left: 80px;
 }
