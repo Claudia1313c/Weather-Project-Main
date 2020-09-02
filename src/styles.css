@@ -55,10 +55,10 @@ ul {
 }
 .weatherDescription {
   font-size: 50px;
-  text-align: justify;
+  display: grid;
+  grid-template-columns: fit-content 1fr;
   width: 62px;
-  display: block;
-  margin-left: -80px;
+  margin-left: -75px;
   position: relative;
 }
 .units {
