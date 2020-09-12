@@ -74,6 +74,14 @@ ul {
   top: -34px;
   left: -10px;
 }
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active {
+  text-decoration: none;
+}
 .mainTemp {
   font-size: 80px;
 }
