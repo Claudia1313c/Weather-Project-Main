@@ -1,25 +1,6 @@
 body {
   font-family: "Caveat";
 }
-.container {
-  height: 700px;
-  width: 800px;
-  margin: 20px auto;
-}
-.weatherApp {
-  box-shadow: #dadde1 10px 10px;
-  padding: 10px 20px;
-  margin: 100px auto;
-  max-width: 700px;
-  border-radius: 6px;
-  border: 1px solid #dadde1;
-}
-.forecast {
-  font-size: 25px;
-  text-align: center;
-  line-height: 30px;
-  font-size: 18px;
-}
 
 h1 {
   display: block;
@@ -31,8 +12,33 @@ h1 {
 }
 ul {
   display: block;
+  margin: 0;
   list-style: none;
   padding-inline-start: 0px;
+}
+
+.container {
+  height: 700px;
+  width: 800px;
+  margin: 20px auto;
+}
+.weatherApp {
+  box-shadow: #dadde1 10px 10px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 6px;
+  border: 1px solid #dadde1;
+}
+.weatherAppContainer {
+  margin: 30px auto;
+  max-width: 600px;
+}
+.forecast {
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
 }
 
 .forecastTemp {
@@ -45,7 +51,7 @@ ul {
   font-size: 60px;
 }
 .middleText {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 .verbiage {
@@ -55,20 +61,20 @@ ul {
 }
 .weatherDescription {
   font-size: 50px;
-  display: grid;
-  grid-template-columns: fit-content 1fr;
-  width: 62px;
+  text-size-adjust: auto;
+  line-height: 1;
   margin-left: -75px;
-  position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .units {
   font-size: 15px;
   position: relative;
-  top: -24px;
+  top: -34px;
   left: -10px;
 }
 .mainTemp {
-  font-size: 65px;
+  font-size: 80px;
 }
 .emoji {
   font-size: 80px;

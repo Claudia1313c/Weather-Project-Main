@@ -25,147 +25,155 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
-        <h1 id="current-city">Budapest - Hungary</h1>
-        <div class="currentTemp" id="current-temp">
-          <div class="row justify-content-center">
-            <div class="col">
-              <ul>
-                <li class="emoji" id="current-city-emoji">
-                  <span style="color: #ffcd3c">
-                    <i class="fas fa-sun"></i>
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="mainTemp" id="main-temp">
-                  <span class="temperature" id="temperature">19</span>
-                  <span class="units" id="units">
-                    <a href="#" class="change-temp-btn" id="celsius-link"> ºC</a
-                    >|
-                    <a href="#" class="change-temp-btn" id="fahrenheit-link">
-                      ºF</a
-                    >
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="weatherDescription" id="weather-description"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="middleText" id="date-time">
-          <div class="row justify-content-center">
-            <div class="col-8,text-align:right" id="current-date">Sunday</div>
-            <div class="col-4" id="current-time">20:46</div>
-          </div>
-        </div>
-        <div class="forecast">
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li class="forecastDay">Monday</li>
-                <li class="forecastEmoji">
-                  <span style="font-size: 35px; color: #ffcd3c"
-                    ><i class="fas fa-cloud-sun"></i
-                  ></span>
-                </li>
-                <li class="forecastTemp">22ºC|ºF</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="forecastDay">Tuesday</li>
-                <li class="forecastEmoji">
-                  <span style="font-size: 35px; color: #ffcd3c"
-                    ><i class="fas fa-cloud-sun"></i
-                  ></span>
-                </li>
-                <li class="forecastTemp">20ºC |ºF</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="forecastDay">Wednesday</li>
-                <li class="forecastEmoji">
-                  <span style="font-size: 35px; color: #ffcd3c"
-                    ><i class="fas fa-cloud-sun"></i
-                  ></span>
-                </li>
-                <li class="forecastTemp">21ºC|ºF</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="forecastDay">Thursday</li>
-                <li class="forecastEmoji">
-                  <span style="font-size: 35px; color: #00bcd4"
-                    ><i class="fas fa-umbrella"></i
-                  ></span>
-                </li>
-                <li class="forecastTemp">22ºC|ºF</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="forecastDay">Friday</li>
-                <li class="forecastEmoji">
-                  <span style="font-size: 35px; color: #00bcd4"
-                    ><i class="fas fa-cloud-rain"></i
-                  ></span>
-                </li>
-                <li class="forecastTemp">15ºC|ºF</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <br />
-        <p class="verbiage" id="verbiage">I want to know the temp in?</p>
-        <form class="search-city" id="search-city-form">
-          <div class="row">
-            <div class="col-6 justify-content-center">
-              <input
-                type="search"
-                placeholder="Search City..."
-                autofocus="on"
-                autocomplete="off"
-                id="search-city-input"
-                class="form-control shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="search"
-                class="form-control btn btn-primary"
-                id="search-city-primary"
-              />
-            </div>
-            <div class="col-3">
-              <button
-                type="button"
-                class="btn btn-success w-100 h-100"
-                id="current-location-button"
+      <div class="weatherAppContainer">
+        <div class="weatherApp">
+          <h1 id="current-city">Budapest - Hungary</h1>
+          <div class="currentTemp" id="current-temp">
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <div class="clearfix">
+                  <ul>
+                    <li class="emoji" id="current-city-emoji">
+                      <span style="color: #ffcd3c">
+                        <i class="fas fa-sun"></i>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <ul>
+                  <li class="mainTemp" id="main-temp">
+                    <span class="temperature" id="temperature">19</span>
+                    <span class="units" id="units">
+                      <a href="#" class="change-temp-btn" id="celsius-link">
+                        ºC</a
+                      >|
+                      <a href="#" class="change-temp-btn" id="fahrenheit-link">
+                        ºF</a
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-4 d-flex align-items-center justify-content-center"
               >
-                current
-              </button>
+                <ul>
+                  <li class="weatherDescription" id="weather-description"></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </form>
+
+          <div class="middleText" id="date-time">
+            <div class="row justify-content-center">
+              <div class="col-8,text-align:right" id="current-date">Sunday</div>
+              <div class="col-4" id="current-time">20:46</div>
+            </div>
+          </div>
+          <div class="forecast">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li class="forecastDay">Monday</li>
+                  <li class="forecastEmoji">
+                    <span style="font-size: 35px; color: #ffcd3c"
+                      ><i class="fas fa-cloud-sun"></i
+                    ></span>
+                  </li>
+                  <li class="forecastTemp">22ºC|ºF</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li class="forecastDay">Tuesday</li>
+                  <li class="forecastEmoji">
+                    <span style="font-size: 35px; color: #ffcd3c"
+                      ><i class="fas fa-cloud-sun"></i
+                    ></span>
+                  </li>
+                  <li class="forecastTemp">20ºC |ºF</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li class="forecastDay">Wednesday</li>
+                  <li class="forecastEmoji">
+                    <span style="font-size: 35px; color: #ffcd3c"
+                      ><i class="fas fa-cloud-sun"></i
+                    ></span>
+                  </li>
+                  <li class="forecastTemp">21ºC|ºF</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li class="forecastDay">Thursday</li>
+                  <li class="forecastEmoji">
+                    <span style="font-size: 35px; color: #00bcd4"
+                      ><i class="fas fa-umbrella"></i
+                    ></span>
+                  </li>
+                  <li class="forecastTemp">22ºC|ºF</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul>
+                  <li class="forecastDay">Friday</li>
+                  <li class="forecastEmoji">
+                    <span style="font-size: 35px; color: #00bcd4"
+                      ><i class="fas fa-cloud-rain"></i
+                    ></span>
+                  </li>
+                  <li class="forecastTemp">15ºC|ºF</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <p class="verbiage" id="verbiage">I want to know the temp in?</p>
+          <form class="search-city" id="search-city-form">
+            <div class="row">
+              <div class="col-6 justify-content-center">
+                <input
+                  type="search"
+                  placeholder="Search City..."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="search-city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="form-control btn btn-primary"
+                  id="search-city-primary"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-success w-100 h-100"
+                  id="current-location-button"
+                >
+                  current
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <br />
+        <footer class="coderName">
+          <a href="https://github.com/Claudia1313c/Weather-Project-Main"
+            >Open-source code by</a
+          >
+          Claudia1313c
+        </footer>
       </div>
-      <footer class="coderName">
-        <a href="https://github.com/Claudia1313c/Weather-Project-Main"
-          >Open-source code by</a
-        >
-        Claudia1313c
-      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
