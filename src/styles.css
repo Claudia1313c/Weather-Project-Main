@@ -18,8 +18,7 @@ ul {
 }
 
 .container {
-  height: 700px;
-  width: 800px;
+  max-width: 800px;
   margin: 20px auto;
 }
 .weatherApp {
@@ -29,26 +28,39 @@ ul {
   max-width: 600px;
   border-radius: 6px;
   border: 1px solid #dadde1;
+  box-sizing: border-box;
 }
 .weatherAppContainer {
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 800px;
 }
-.forecast {
-  font-size: 25px;
+.weather-forecast h3 {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
-  line-height: 30px;
-  font-size: 18px;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
 }
-
-.forecastTemp {
-  font-size: 20px;
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
 }
-.forecastDay {
-  font-weight: bolder;
+.weather-forecast {
+  margin: 10px;
+  padding: 20px;
 }
-.col-6 {
-  font-size: 60px;
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
 }
 .middleText {
   font-size: 40px;
