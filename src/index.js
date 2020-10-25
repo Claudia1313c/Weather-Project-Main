@@ -49,7 +49,7 @@ function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
 }
 function dispalyForecast(response) {
-  let forecastElement = document.querySelector("#forecast1");
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
 
